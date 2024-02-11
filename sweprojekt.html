@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset='utf-8'>
+    <link href="stylesheet_sweprojekt.css" rel="stylesheet">
+    <title>Kalorienbedarfsrechner</title>
+  </head>
+  <body>
+    <div class="logo">
+      <a href="https://informatik.hs-bremerhaven.de/step2022team06/projekt/sweprojekt.html">
+        <img src="lasagne_impact_logo.png" alt="team06_logo" style="max-width: 224px; max-height: 384px;">
+      </a>
+    </div>
+    <div class="header">
+      <h1 style="margin-right: 168px;">Kalorienrechner Team06</h1>  
+    </div>
+    <div class="navigation">
+      <ul class="navlist_ul">
+        <li class="navlist_li">
+          <a class="nav_a" href="https://www.wehorse.com/de/blog/wp-content/uploads/2022/01/Reiten-lernen-fu%CC%88r-Erwachsene-1536x864.jpg">3. REITER</a>
+        </li>
+        <li class="navlist_li">
+          <a class="nav_a" href="https://informatik.hs-bremerhaven.de/step2022team06/">LASAGNE IMPACT</a>
+        </li>
+        <li class="navlist_li">
+          <a id="cur_site" class="nav_a" href="https://informatik.hs-bremerhaven.de/step2022team06/projekt/sweprojekt.html">KALORIENRECHNER</a>
+        </li>
+      </ul>
+    </div>
+    <div class="biceps">
+      <b>WENN DU BIZEPS<br>
+         TRAINIERST,<br>
+         HAST DU BIZEPS!</b>
+    </div>
+    <div class="content">
+      <h2>Bitte geben Sie im foldenden Formular Ihre Daten ein:</h2><br>
+      <form action="https://informatik.hs-bremerhaven.de/docker-step2022team06-web/cgi-bin/endtabelle.sh">
+        <table class="formTab">
+          <tr>
+            <th class="formth">Alter :</th>
+            <th class="empCell"></th>
+            <th class="formth">Körpergröße :</th>
+            <th class="empCell"></th>
+            <th class="formth">Körpergewicht :</th>
+          </tr>
+          <tr>
+            <td>
+              <input type="number" name="alter" min="18" max="99" minlength="2" maxlength="3" placeholder="Alter in Jahren" class="formNum">
+            </td>
+            <td class="empCell"></td>
+            <td>
+              <input type="number" name="groesse" min="100" max="250" maxlength="3" placeholder="Größe in cm" class="formNum">
+            </td>
+            <td class="empCell"></td>
+            <td>
+              <input type="number" name="gewicht" min="10" max="300" maxlength="3" placeholder="Gewicht in kg" class="formNum">
+            </td>
+          </tr>
+        </table>
+    </div>
+    <div class="secContent">
+      <table class="formTab">
+        <tr><br>
+          <th class="formth" style="width: 230px;">Biologisches Geschlecht :</th>
+          <th class="empCell"></th>
+          <th class="formth">Schlaf :</th>
+          <th class="empCell"></th>
+          <th class="formth">Bewegung :</th>
+        </tr>
+        <tr>
+          <td>
+            <label for="m">M</label>
+            <input type="radio" id="m" name="geschlecht" value="m">
+          </td>         
+          <td class="empCell"></td>
+          <td>
+            <input type="number" name="schlaf" min="1" max="24" maxlength="2" placeholder="Schlaf in h" class="formNum">
+          </td>
+          <td class="empCell"></td>
+          <td>
+            <label for="wenBew" style="margin-right: 61px;">Wenig Bewegung</label>
+            <input type="radio" id="wenBew" name="bewegung" value="1.2">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="f" style="margin-right: 4px;">F</label>
+            <input type="radio" id="f" name="geschlecht" value="f">
+          </td>
+          <td class="empCell"></td>
+          <td class="empCell"></td>
+          <td class="empCell"></td>
+          <td>
+            <label for="ausBew">Ausgewogene Bewegung</label>
+            <input type="radio" id="ausBew" name="bewegung" value="1.4">
+          </td>
+        </tr>
+        <tr>
+          <td class="empCell"></td>
+          <td class="empCell"></td>
+          <td class="empCell"></td>
+          <td class="empCell"></td>
+          <td>
+            <label for="vieBew" style="margin-right: 82px;">Viel Bewegung</label>
+            <input type="radio" id="vieBew" name="bewegung" value="1.7">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="thiContent">
+      <table class="formTab">
+        <tr><br>
+          <th class="formth">Frühstück :</th>
+          <th class="empCell"></th>
+          <th class="formth">Mittagessen :</th>
+          <th class="empCell"></th>
+          <th class="formth">Abendessen :</th>
+          <th class="empCell"></th>
+          <th class="formth">Snacks :</th>
+        </tr>
+        <tr>
+          <td>
+        <input type="number" name="frueh" min="0" max="9999" maxlength="4" placeholder="Kalorien angeben" class="formNum">
+          </td>
+          <td class="empCell"></td>
+          <td>
+           <input type="number" name="mit" min="0" max="9999" maxlength="4" placeholder="Kalorien angeben" class="formNum">
+          </td>
+          <td class="empCell"></td>
+          <td>
+            <input type="number" name="abend" min="0" max="9999" maxlength="4" placeholder="Kalorien angeben" class="formNum">
+          </td>
+          <td class="empCell"></td>
+          <td>
+           <input type="number" name="snacks" min="0" max="9999" maxlength="4" placeholder="Kalorien angeben" class="formNum">
+          </td>
+        </tr>
+      </table>
+      <input type="reset" value="Eingabe löschen" style="margin: 20px 50px 50px 35px; padding: 10px; width: 200px;">
+       <input type="submit" value="Eingabe bestätigen" style="margin: 20x 0px 50px 0px; padding: 10px; width: 200px;">
+      </form>
+      <br>
+      <a href="lebensmitteltab.html" style="margin-left: 35px; user-select: none;">
+        <button style="padding: 10px; width: 200px; margin: 0px 0px 50px 0px;">
+          Lebensmitteltabelle
+        </button>
+      </a>
+    </div>
+    <div class="footer">
+      Hier könnten Ihre AGB's stehen!
+    </div>
+  </body>
+</html>
